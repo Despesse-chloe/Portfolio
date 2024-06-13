@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #573a0e;
+  font-family: Arial, sans-serif;
+ 
+ 
+}
+main{
+  background-color: #ccaa88c0;
+  padding: 10px;
+  margin: 0px;
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+#Text {
+  /*Image de fond*/
+  background-image: url(forest-7406241.jpg);
+  background-position: center;
+  background-size: cover;
+
+  /*Taille de l'Acceuil*/
+  height: 100vh;
+
+  /*Placement des éléments*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+/*menu boutons*/
+.Boutons {
+  display: flex;
+  justify-content: center;
+}
+
+.Boutons a {
+  /*Espacement du menu avec le titre et des puces entre elles*/
+  padding-left: 30px;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/*Animation boutons*/
+.Boutons a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: #573a0e;
+  transition: transform 0.3s ease-in-out;
+}
+
+.Boutons a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Décoration du titre*/
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+#bouton3 {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+#bouton2 {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+#bouton1 {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+/*EN SAVOIR PLUS */
+.EnSavoirPlus {
+  background-color: #ccaa88c0;
+  height: 100vh;
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #573a0e;
+  margin-bottom: 10px;
+}
+
+.EnSavoirPlus .presentation {
+  border: 2px solid #573a0e;
+  height: auto;
+  margin: 0vw 10vw 0vw 10vw;
+  background-color: #d8bfa5;
+  border-radius: 20px;
+}
+
+.EnSavoirPlus h1 {
+  font-size: 20px;
+  text-transform: none;
+}
+
+.EnSavoirPlus p{
+  text-align: left;
+  padding: 2px;
+}
+
+
+/*PROJETS*/
+
+.MesProjets {
+  background-color: #ccaa88c0;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; 
+  padding: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: 1px solid #573a0e;
+}
+
+.projets {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+
+  /* Cartes */
+  height: auto;
+  width: 340px;
+  padding: 20px 35px;
+  padding-bottom: 0px;
+
+  /* Cadres */
+  border: 2px solid #573a0e;
+  border-radius: 20px;
+  background-color: #d8bfa5;
+}
+
+.projets h2 {
+  text-align: center;
+}
+
+.projets li {
+  list-style: circle;
+}
+
+.projets ul {
+  padding-bottom: 10px;
+}
+
+
+/*BOUTON "DECOUVRIR"*/
+.bouton {
+  /*contour et style*/
+  background-color: #573a0e;
+  border: 1px solid #573a0e;
+  border-radius: 20px;
+
+  /*texte*/
+  color: #ccaa88c0;
+  font-size: 17px;
+
+  /*position*/
+  margin: 12px auto;
+  padding: 7px; 
+}
+
+/*taille de l'image*/
+img {
+  width: 25px;
+  height: auto;
+}
+
+/* Aligner icon et texte*/
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+/*DESCRIPTION 1 */
+.Description1,.Description2,.Description3 {
+  display: none;
+  background-color: #ccaa88c0;
+
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  text-align: center;
+  border: 1px solid #573a0e;
+  margin-top: 10px;
+  
+}
+.sae1 {
+  
+  width: auto;
+
+  /* aligner le text*/
+  text-align: center;
+}
+
+
+.sae1 h2 {
+  padding: 7px;
+  justify-content: center;
+}
+.sae1 h3 {
+  padding: 7px;
+}
+
+.sae1 p {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/*DESCRIPTION 2 */
+.sae2 {
+
+  width: auto;
+
+  /* aligner le text*/
+  text-align: center;
+}
+.sae2 h2 {
+  padding: 7px;
+  justify-content: center;
+}
+.sae2 h3 {
+  padding: 7px;
+}
+.sae2 p {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*DESCRIPTION 3 */
+.sae3 {
+  
+  width: auto;
+
+  /* aligner le text*/
+  text-align: center;
+}
+.sae3 h2 {
+  padding: 7px;
+  justify-content: center;
+}
+.sae3 h3 {
+  padding: 7px;
+}
+.sae3 p {
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.social {
+  display: flex;
+  height: 150px;
+  width: 100%;
+  background-color:  #573a0e;
+  line-height: 1.3;
+  color: #ccaa88c0;
+}
+footer {
+  height: auto;
+}
+/* Div pour le pied de page */
+
+footer ul {
+  display: inline-grid;
+  grid-auto-flow: row;
+  grid-gap: 24px;
+  justify-items: center;
+  margin: auto;
+  
+}
+
+  
+footer ul li:nth-child(5) {
+  list-style: none;
+}
+
+.social li {
+  list-style: none;
+  background-color:#573a0e
+}
+
+.social li a{
+	color: #ccaa88c0;
+  text-decoration: underline;
+  background-color:#573a0e
+ 
+}
+
+.social li:last-child {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.bouton:hover {
+  opacity: 50%;
+}
+
+/* BOUTON POUR REMONTER EN HAUT DE PAGE*/
+.btnHaut {
+  height: 150px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 800px) {
+  .MesProjets {
+    flex-direction: column;
+    
+  }
+  .projets{
+    margin-bottom: 10px;
+  }
+}
+
