@@ -134,6 +134,16 @@ main, .container {
   list-style: disc inside;
   margin: 5px 0;
 }
+.projets, .EnSavoirPlus {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.projets:hover, .EnSavoirPlus:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(214, 51, 132, 0.4);
+  background-color: #ffe6f0; /* léger éclaircissement */
+}
 
 /* === BOUTONS DE PROJETS & DESCRIPTION === */
 .bouton {
@@ -250,3 +260,4 @@ main, .container {
     width: 90%;
   }
 }
+
